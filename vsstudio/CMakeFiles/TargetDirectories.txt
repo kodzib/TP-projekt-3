@@ -1,5 +1,5 @@
-C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/vsstudio/CMakeFiles/pybind11module.dir
-C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/vsstudio/CMakeFiles/pybind11app.dir
-C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/vsstudio/CMakeFiles/ALL_BUILD.dir
-C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/vsstudio/CMakeFiles/ZERO_CHECK.dir
-C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/vsstudio/externals/pybind11/CMakeFiles/ALL_BUILD.dir
+C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/pybind11module.dir
+C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/pybind11app.dir
+C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/ALL_BUILD.dir
+C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/ZERO_CHECK.dir
+C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/externals/pybind11/CMakeFiles/ALL_BUILD.dir
