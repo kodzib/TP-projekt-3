@@ -1,4 +1,6 @@
 externals/
+vsstudio/
+!generate_vs2022.bat
 
 ## doslownie skopiowany .gitignore z innego projektu vs
 ## Ignore Visual Studio temporary files, build results, and
