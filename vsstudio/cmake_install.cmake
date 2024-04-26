@@ -33,8 +33,10 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
+  # Include the install script for each subdirectory.
   include("C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/externals/pybind11/cmake_install.cmake")
+  include("C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/externals/matplotplusplus/cmake_install.cmake")
+
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

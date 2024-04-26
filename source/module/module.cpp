@@ -1,5 +1,6 @@
 #include <pybind11/pybind11.h>
 #include <stdio.h>
+#include <matplot/matplot.h>
 
 void say_hello() {
 	printf("Hello World!\n");

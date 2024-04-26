@@ -24,7 +24,7 @@ events:
       The output was:
       0
       MSBuild version 17.9.8+b34f75857 for .NET Framework
-      Build started 25.04.2024 18:51:16.
+      Build started 26.04.2024 14:27:17.
       
       Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\3.29.2\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -53,7 +53,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.99
+      Time Elapsed 00:00:00.62
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -79,7 +79,7 @@ events:
       The output was:
       0
       MSBuild version 17.9.8+b34f75857 for .NET Framework
-      Build started 25.04.2024 18:51:17.
+      Build started 26.04.2024 14:27:19.
       
       Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\3.29.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -108,7 +108,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.62
+      Time Elapsed 00:00:00.61
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -127,8 +127,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-25htai"
-      binary: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-25htai"
+      source: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-worfsb"
+      binary: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-worfsb"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -137,40 +137,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-25htai'
+        Change Dir: 'C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-worfsb'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_bdc31.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_47d1e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.9.8+b34f75857 for .NET Framework
-        Build started 25.04.2024 18:51:18.
+        Build started 26.04.2024 14:27:20.
         
-        Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-25htai\\cmTC_bdc31.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-worfsb\\cmTC_47d1e.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_bdc31.dir\\Debug\\".
+          Creating directory "cmTC_47d1e.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-25htai\\Debug\\".
-          Creating directory "cmTC_bdc31.dir\\Debug\\cmTC_bdc31.tlog\\".
+          Creating directory "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-worfsb\\Debug\\".
+          Creating directory "cmTC_47d1e.dir\\Debug\\cmTC_47d1e.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_bdc31.dir\\Debug\\cmTC_bdc31.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_bdc31.dir\\Debug\\cmTC_bdc31.tlog\\unsuccessfulbuild".
+          Creating "cmTC_47d1e.dir\\Debug\\cmTC_47d1e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_47d1e.dir\\Debug\\cmTC_47d1e.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bdc31.dir\\Debug\\\\" /Fd"cmTC_bdc31.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_47d1e.dir\\Debug\\\\" /Fd"cmTC_47d1e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bdc31.dir\\Debug\\\\" /Fd"cmTC_bdc31.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_47d1e.dir\\Debug\\\\" /Fd"cmTC_47d1e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-25htai\\Debug\\cmTC_bdc31.exe" /INCREMENTAL /ILK:"cmTC_bdc31.dir\\Debug\\cmTC_bdc31.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-25htai/Debug/cmTC_bdc31.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-25htai/Debug/cmTC_bdc31.lib" /MACHINE:X64  /machine:x64 cmTC_bdc31.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_bdc31.vcxproj -> C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-25htai\\Debug\\cmTC_bdc31.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-worfsb\\Debug\\cmTC_47d1e.exe" /INCREMENTAL /ILK:"cmTC_47d1e.dir\\Debug\\cmTC_47d1e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-worfsb/Debug/cmTC_47d1e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-worfsb/Debug/cmTC_47d1e.lib" /MACHINE:X64  /machine:x64 cmTC_47d1e.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_47d1e.vcxproj -> C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-worfsb\\Debug\\cmTC_47d1e.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_bdc31.dir\\Debug\\cmTC_bdc31.tlog\\unsuccessfulbuild".
-          Touching "cmTC_bdc31.dir\\Debug\\cmTC_bdc31.tlog\\cmTC_bdc31.lastbuildstate".
-        Done Building Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-25htai\\cmTC_bdc31.vcxproj" (default targets).
+          Deleting file "cmTC_47d1e.dir\\Debug\\cmTC_47d1e.tlog\\unsuccessfulbuild".
+          Touching "cmTC_47d1e.dir\\Debug\\cmTC_47d1e.tlog\\cmTC_47d1e.lastbuildstate".
+        Done Building Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-worfsb\\cmTC_47d1e.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.61
+        Time Elapsed 00:00:00.60
         
       exitCode: 0
   -
@@ -210,8 +210,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-c4a2u8"
-      binary: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-c4a2u8"
+      source: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-2c6tgd"
+      binary: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-2c6tgd"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -220,40 +220,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-c4a2u8'
+        Change Dir: 'C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-2c6tgd'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a6c65.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_34bda.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.9.8+b34f75857 for .NET Framework
-        Build started 25.04.2024 18:51:19.
+        Build started 26.04.2024 14:27:21.
         
-        Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-c4a2u8\\cmTC_a6c65.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-2c6tgd\\cmTC_34bda.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_a6c65.dir\\Debug\\".
+          Creating directory "cmTC_34bda.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-c4a2u8\\Debug\\".
-          Creating directory "cmTC_a6c65.dir\\Debug\\cmTC_a6c65.tlog\\".
+          Creating directory "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-2c6tgd\\Debug\\".
+          Creating directory "cmTC_34bda.dir\\Debug\\cmTC_34bda.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_a6c65.dir\\Debug\\cmTC_a6c65.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_a6c65.dir\\Debug\\cmTC_a6c65.tlog\\unsuccessfulbuild".
+          Creating "cmTC_34bda.dir\\Debug\\cmTC_34bda.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_34bda.dir\\Debug\\cmTC_34bda.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_a6c65.dir\\Debug\\\\" /Fd"cmTC_a6c65.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_34bda.dir\\Debug\\\\" /Fd"cmTC_34bda.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_a6c65.dir\\Debug\\\\" /Fd"cmTC_a6c65.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_34bda.dir\\Debug\\\\" /Fd"cmTC_34bda.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-c4a2u8\\Debug\\cmTC_a6c65.exe" /INCREMENTAL /ILK:"cmTC_a6c65.dir\\Debug\\cmTC_a6c65.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-c4a2u8/Debug/cmTC_a6c65.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-c4a2u8/Debug/cmTC_a6c65.lib" /MACHINE:X64  /machine:x64 cmTC_a6c65.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_a6c65.vcxproj -> C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-c4a2u8\\Debug\\cmTC_a6c65.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-2c6tgd\\Debug\\cmTC_34bda.exe" /INCREMENTAL /ILK:"cmTC_34bda.dir\\Debug\\cmTC_34bda.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-2c6tgd/Debug/cmTC_34bda.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-2c6tgd/Debug/cmTC_34bda.lib" /MACHINE:X64  /machine:x64 cmTC_34bda.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_34bda.vcxproj -> C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-2c6tgd\\Debug\\cmTC_34bda.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_a6c65.dir\\Debug\\cmTC_a6c65.tlog\\unsuccessfulbuild".
-          Touching "cmTC_a6c65.dir\\Debug\\cmTC_a6c65.tlog\\cmTC_a6c65.lastbuildstate".
-        Done Building Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-c4a2u8\\cmTC_a6c65.vcxproj" (default targets).
+          Deleting file "cmTC_34bda.dir\\Debug\\cmTC_34bda.tlog\\unsuccessfulbuild".
+          Touching "cmTC_34bda.dir\\Debug\\cmTC_34bda.tlog\\cmTC_34bda.lastbuildstate".
+        Done Building Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-2c6tgd\\cmTC_34bda.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.65
+        Time Elapsed 00:00:00.63
         
       exitCode: 0
   -
@@ -297,8 +297,8 @@ events:
     checks:
       - "Performing Test HAS_MSVC_GL_LTCG"
     directories:
-      source: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-uhcl43"
-      binary: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-uhcl43"
+      source: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-jcpypw"
+      binary: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-jcpypw"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -308,48 +308,480 @@ events:
       variable: "HAS_MSVC_GL_LTCG"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-uhcl43'
+        Change Dir: 'C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-jcpypw'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_551cc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f48cb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.9.8+b34f75857 for .NET Framework
-        Build started 25.04.2024 18:51:20.
+        Build started 26.04.2024 14:27:23.
         
-        Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-uhcl43\\cmTC_551cc.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-jcpypw\\cmTC_f48cb.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_551cc.dir\\Debug\\".
+          Creating directory "cmTC_f48cb.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-uhcl43\\Debug\\".
-          Creating directory "cmTC_551cc.dir\\Debug\\cmTC_551cc.tlog\\".
+          Creating directory "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-jcpypw\\Debug\\".
+          Creating directory "cmTC_f48cb.dir\\Debug\\cmTC_f48cb.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_551cc.dir\\Debug\\cmTC_551cc.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_551cc.dir\\Debug\\cmTC_551cc.tlog\\unsuccessfulbuild".
+          Creating "cmTC_f48cb.dir\\Debug\\cmTC_f48cb.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_f48cb.dir\\Debug\\cmTC_f48cb.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_551cc.dir\\Debug\\\\" /Fd"cmTC_551cc.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-uhcl43\\src.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_f48cb.dir\\Debug\\\\" /Fd"cmTC_f48cb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-jcpypw\\src.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_551cc.dir\\Debug\\\\" /Fd"cmTC_551cc.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-uhcl43\\src.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_f48cb.dir\\Debug\\\\" /Fd"cmTC_f48cb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-jcpypw\\src.cxx"
           src.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-uhcl43\\Debug\\cmTC_551cc.exe" /INCREMENTAL /ILK:"cmTC_551cc.dir\\Debug\\cmTC_551cc.ilk" /NOLOGO "-LTCG" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-uhcl43/Debug/cmTC_551cc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-uhcl43/Debug/cmTC_551cc.lib" /MACHINE:X64  /machine:x64 cmTC_551cc.dir\\Debug\\src.obj
-        LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-uhcl43\\cmTC_551cc.vcxproj]
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-jcpypw\\Debug\\cmTC_f48cb.exe" /INCREMENTAL /ILK:"cmTC_f48cb.dir\\Debug\\cmTC_f48cb.ilk" /NOLOGO "-LTCG" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-jcpypw/Debug/cmTC_f48cb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-jcpypw/Debug/cmTC_f48cb.lib" /MACHINE:X64  /machine:x64 cmTC_f48cb.dir\\Debug\\src.obj
+        LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-jcpypw\\cmTC_f48cb.vcxproj]
           Generating code
           Finished generating code
-          cmTC_551cc.vcxproj -> C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-uhcl43\\Debug\\cmTC_551cc.exe
+          cmTC_f48cb.vcxproj -> C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-jcpypw\\Debug\\cmTC_f48cb.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_551cc.dir\\Debug\\cmTC_551cc.tlog\\unsuccessfulbuild".
-          Touching "cmTC_551cc.dir\\Debug\\cmTC_551cc.tlog\\cmTC_551cc.lastbuildstate".
-        Done Building Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-uhcl43\\cmTC_551cc.vcxproj" (default targets).
+          Deleting file "cmTC_f48cb.dir\\Debug\\cmTC_f48cb.tlog\\unsuccessfulbuild".
+          Touching "cmTC_f48cb.dir\\Debug\\cmTC_f48cb.tlog\\cmTC_f48cb.lastbuildstate".
+        Done Building Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-jcpypw\\cmTC_f48cb.vcxproj" (default targets).
         
         Build succeeded.
         
-        "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-uhcl43\\cmTC_551cc.vcxproj" (default target) (1) ->
+        "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-jcpypw\\cmTC_f48cb.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-uhcl43\\cmTC_551cc.vcxproj]
+          LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-jcpypw\\cmTC_f48cb.vcxproj]
         
             1 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.63
+        Time Elapsed 00:00:00.64
         
       exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindBLAS.cmake:372 (check_function_exists)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindBLAS.cmake:416 (check_blas_libraries)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindLAPACK.cmake:283 (_lapack_find_dependency)"
+      - "externals/matplotplusplus/source/3rd_party/CMakeLists.txt:96 (find_package)"
+    checks:
+      - "Looking for sgemm_"
+    directories:
+      source: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-8uq4zr"
+      binary: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-8uq4zr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/externals/matplotplusplus/cmake"
+    buildResult:
+      variable: "BLAS_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-8uq4zr'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ca8fb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 26.04.2024 14:27:24.
+        
+        Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-8uq4zr\\cmTC_ca8fb.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_ca8fb.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-8uq4zr\\Debug\\".
+          Creating directory "cmTC_ca8fb.dir\\Debug\\cmTC_ca8fb.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_ca8fb.dir\\Debug\\cmTC_ca8fb.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_ca8fb.dir\\Debug\\cmTC_ca8fb.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=sgemm_ /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ca8fb.dir\\Debug\\\\" /Fd"cmTC_ca8fb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-8uq4zr\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=sgemm_ /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ca8fb.dir\\Debug\\\\" /Fd"cmTC_ca8fb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-8uq4zr\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-8uq4zr\\Debug\\cmTC_ca8fb.exe" /INCREMENTAL /ILK:"cmTC_ca8fb.dir\\Debug\\cmTC_ca8fb.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-8uq4zr/Debug/cmTC_ca8fb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-8uq4zr/Debug/cmTC_ca8fb.lib" /MACHINE:X64  /machine:x64 cmTC_ca8fb.dir\\Debug\\CheckFunctionExists.obj
+        CheckFunctionExists.obj : error LNK2019: unresolved external symbol sgemm_ referenced in function main [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-8uq4zr\\cmTC_ca8fb.vcxproj]
+        C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-8uq4zr\\Debug\\cmTC_ca8fb.exe : fatal error LNK1120: 1 unresolved externals [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-8uq4zr\\cmTC_ca8fb.vcxproj]
+        Done Building Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-8uq4zr\\cmTC_ca8fb.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-8uq4zr\\cmTC_ca8fb.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          CheckFunctionExists.obj : error LNK2019: unresolved external symbol sgemm_ referenced in function main [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-8uq4zr\\cmTC_ca8fb.vcxproj]
+          C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-8uq4zr\\Debug\\cmTC_ca8fb.exe : fatal error LNK1120: 1 unresolved externals [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-8uq4zr\\cmTC_ca8fb.vcxproj]
+        
+            0 Warning(s)
+            2 Error(s)
+        
+        Time Elapsed 00:00:00.53
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindBLAS.cmake:468 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindLAPACK.cmake:283 (_lapack_find_dependency)"
+      - "externals/matplotplusplus/source/3rd_party/CMakeLists.txt:96 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-u585vj"
+      binary: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-u585vj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/externals/matplotplusplus/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-u585vj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_53e8f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 26.04.2024 14:27:25.
+        
+        Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-u585vj\\cmTC_53e8f.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_53e8f.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-u585vj\\Debug\\".
+          Creating directory "cmTC_53e8f.dir\\Debug\\cmTC_53e8f.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_53e8f.dir\\Debug\\cmTC_53e8f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_53e8f.dir\\Debug\\cmTC_53e8f.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_53e8f.dir\\Debug\\\\" /Fd"cmTC_53e8f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-u585vj\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_53e8f.dir\\Debug\\\\" /Fd"cmTC_53e8f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-u585vj\\src.c"
+          src.c
+        C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-u585vj\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-u585vj\\cmTC_53e8f.vcxproj]
+        Done Building Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-u585vj\\cmTC_53e8f.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-u585vj\\cmTC_53e8f.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-u585vj\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-u585vj\\cmTC_53e8f.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.43
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindBLAS.cmake:468 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindLAPACK.cmake:283 (_lapack_find_dependency)"
+      - "externals/matplotplusplus/source/3rd_party/CMakeLists.txt:96 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-py8gi7"
+      binary: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-py8gi7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/externals/matplotplusplus/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-py8gi7'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3abd6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 26.04.2024 14:27:25.
+        
+        Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-py8gi7\\cmTC_3abd6.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_3abd6.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-py8gi7\\Debug\\".
+          Creating directory "cmTC_3abd6.dir\\Debug\\cmTC_3abd6.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_3abd6.dir\\Debug\\cmTC_3abd6.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_3abd6.dir\\Debug\\cmTC_3abd6.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3abd6.dir\\Debug\\\\" /Fd"cmTC_3abd6.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-py8gi7\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3abd6.dir\\Debug\\\\" /Fd"cmTC_3abd6.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-py8gi7\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-py8gi7\\Debug\\cmTC_3abd6.exe" /INCREMENTAL /ILK:"cmTC_3abd6.dir\\Debug\\cmTC_3abd6.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-py8gi7/Debug/cmTC_3abd6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-py8gi7/Debug/cmTC_3abd6.lib" /MACHINE:X64  /machine:x64 cmTC_3abd6.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-py8gi7\\cmTC_3abd6.vcxproj]
+        Done Building Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-py8gi7\\cmTC_3abd6.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-py8gi7\\cmTC_3abd6.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-py8gi7\\cmTC_3abd6.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.48
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindBLAS.cmake:468 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindLAPACK.cmake:283 (_lapack_find_dependency)"
+      - "externals/matplotplusplus/source/3rd_party/CMakeLists.txt:96 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-agddp4"
+      binary: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-agddp4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/externals/matplotplusplus/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-agddp4'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a17b8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 26.04.2024 14:27:26.
+        
+        Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-agddp4\\cmTC_a17b8.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_a17b8.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-agddp4\\Debug\\".
+          Creating directory "cmTC_a17b8.dir\\Debug\\cmTC_a17b8.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_a17b8.dir\\Debug\\cmTC_a17b8.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_a17b8.dir\\Debug\\cmTC_a17b8.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a17b8.dir\\Debug\\\\" /Fd"cmTC_a17b8.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-agddp4\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a17b8.dir\\Debug\\\\" /Fd"cmTC_a17b8.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-agddp4\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-agddp4\\Debug\\cmTC_a17b8.exe" /INCREMENTAL /ILK:"cmTC_a17b8.dir\\Debug\\cmTC_a17b8.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-agddp4/Debug/cmTC_a17b8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-agddp4/Debug/cmTC_a17b8.lib" /MACHINE:X64  /machine:x64 cmTC_a17b8.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-agddp4\\cmTC_a17b8.vcxproj]
+        Done Building Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-agddp4\\cmTC_a17b8.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-agddp4\\cmTC_a17b8.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-agddp4\\cmTC_a17b8.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.47
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/GenerateExportHeader.cmake:206 (check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/GenerateExportHeader.cmake:263 (_check_cxx_compiler_attribute)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/GenerateExportHeader.cmake:420 (_test_compiler_has_deprecated)"
+      - "externals/matplotplusplus/source/matplot/CMakeLists.txt:105 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED_ATTR"
+    directories:
+      source: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-glra0m"
+      binary: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-glra0m"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/externals/matplotplusplus/cmake"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED_ATTR"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-glra0m'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_44717.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 26.04.2024 14:27:27.
+        
+        Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\cmTC_44717.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_44717.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\Debug\\".
+          Creating directory "cmTC_44717.dir\\Debug\\cmTC_44717.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_44717.dir\\Debug\\cmTC_44717.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_44717.dir\\Debug\\cmTC_44717.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED_ATTR /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_44717.dir\\Debug\\\\" /Fd"cmTC_44717.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED_ATTR /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_44717.dir\\Debug\\\\" /Fd"cmTC_44717.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\src.cxx"
+          src.cxx
+        C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\src.cxx(1,16): error C2065: '__deprecated__': undeclared identifier [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\cmTC_44717.vcxproj]
+        C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\src.cxx(1,31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\cmTC_44717.vcxproj]
+        C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\src.cxx(1,33): error C2062: type 'int' unexpected [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\cmTC_44717.vcxproj]
+        C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\src.cxx(1,48): error C2143: syntax error: missing ';' before '{' [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\cmTC_44717.vcxproj]
+        C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\src.cxx(1,48): error C2447: '{': missing function header (old-style formal list?) [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\cmTC_44717.vcxproj]
+        C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\src.cxx(2,25): error C3861: 'somefunc': identifier not found [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\cmTC_44717.vcxproj]
+        Done Building Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\cmTC_44717.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\cmTC_44717.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\src.cxx(1,16): error C2065: '__deprecated__': undeclared identifier [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\cmTC_44717.vcxproj]
+          C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\src.cxx(1,31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\cmTC_44717.vcxproj]
+          C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\src.cxx(1,33): error C2062: type 'int' unexpected [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\cmTC_44717.vcxproj]
+          C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\src.cxx(1,48): error C2143: syntax error: missing ';' before '{' [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\cmTC_44717.vcxproj]
+          C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\src.cxx(1,48): error C2447: '{': missing function header (old-style formal list?) [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\cmTC_44717.vcxproj]
+          C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\src.cxx(2,25): error C3861: 'somefunc': identifier not found [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-glra0m\\cmTC_44717.vcxproj]
+        
+            0 Warning(s)
+            6 Error(s)
+        
+        Time Elapsed 00:00:00.44
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/GenerateExportHeader.cmake:206 (check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/GenerateExportHeader.cmake:269 (_check_cxx_compiler_attribute)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/GenerateExportHeader.cmake:420 (_test_compiler_has_deprecated)"
+      - "externals/matplotplusplus/source/matplot/CMakeLists.txt:105 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED"
+    directories:
+      source: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-sldqg6"
+      binary: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-sldqg6"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/externals/matplotplusplus/cmake"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-sldqg6'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_011b4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 26.04.2024 14:27:28.
+        
+        Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-sldqg6\\cmTC_011b4.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_011b4.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-sldqg6\\Debug\\".
+          Creating directory "cmTC_011b4.dir\\Debug\\cmTC_011b4.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_011b4.dir\\Debug\\cmTC_011b4.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_011b4.dir\\Debug\\cmTC_011b4.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_011b4.dir\\Debug\\\\" /Fd"cmTC_011b4.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-sldqg6\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_011b4.dir\\Debug\\\\" /Fd"cmTC_011b4.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-sldqg6\\src.cxx"
+          src.cxx
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-sldqg6\\Debug\\cmTC_011b4.exe" /INCREMENTAL /ILK:"cmTC_011b4.dir\\Debug\\cmTC_011b4.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-sldqg6/Debug/cmTC_011b4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-sldqg6/Debug/cmTC_011b4.lib" /MACHINE:X64  /machine:x64 cmTC_011b4.dir\\Debug\\src.obj
+          cmTC_011b4.vcxproj -> C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-sldqg6\\Debug\\cmTC_011b4.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_011b4.dir\\Debug\\cmTC_011b4.tlog\\unsuccessfulbuild".
+          Touching "cmTC_011b4.dir\\Debug\\cmTC_011b4.tlog\\cmTC_011b4.lastbuildstate".
+        Done Building Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-sldqg6\\cmTC_011b4.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.62
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "externals/matplotplusplus/source/matplot/CMakeLists.txt:141 (check_symbol_exists)"
+    checks:
+      - "Looking for __fbufsize"
+    directories:
+      source: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-c2gylz"
+      binary: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-c2gylz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/externals/matplotplusplus/cmake"
+    buildResult:
+      variable: "HAVE_FBUFSIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/CMakeScratch/TryCompile-c2gylz'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_dbc21.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.9.8+b34f75857 for .NET Framework
+        Build started 26.04.2024 14:27:28.
+        
+        Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-c2gylz\\cmTC_dbc21.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_dbc21.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-c2gylz\\Debug\\".
+          Creating directory "cmTC_dbc21.dir\\Debug\\cmTC_dbc21.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_dbc21.dir\\Debug\\cmTC_dbc21.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_dbc21.dir\\Debug\\cmTC_dbc21.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dbc21.dir\\Debug\\\\" /Fd"cmTC_dbc21.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-c2gylz\\CheckSymbolExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33523 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dbc21.dir\\Debug\\\\" /Fd"cmTC_dbc21.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-c2gylz\\CheckSymbolExists.c"
+          CheckSymbolExists.c
+        C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-c2gylz\\CheckSymbolExists.c(2,10): error C1083: Cannot open include file: 'stdio_ext.h': No such file or directory [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-c2gylz\\cmTC_dbc21.vcxproj]
+        Done Building Project "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-c2gylz\\cmTC_dbc21.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-c2gylz\\cmTC_dbc21.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-c2gylz\\CheckSymbolExists.c(2,10): error C1083: Cannot open include file: 'stdio_ext.h': No such file or directory [C:\\Users\\kbrow\\OneDrive\\Desktop\\projekty\\TP projekt 3\\TP-projekt-3\\vsstudio\\CMakeFiles\\CMakeScratch\\TryCompile-c2gylz\\cmTC_dbc21.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.44
+        
+      exitCode: 1
 ...

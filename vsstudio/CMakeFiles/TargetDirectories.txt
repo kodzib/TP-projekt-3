@@ -1,5 +1,13 @@
 C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/pybind11module.dir
-C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/pybind11app.dir
+C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/INSTALL.dir
 C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/ALL_BUILD.dir
 C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/CMakeFiles/ZERO_CHECK.dir
+C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/externals/pybind11/CMakeFiles/INSTALL.dir
 C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/externals/pybind11/CMakeFiles/ALL_BUILD.dir
+C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/externals/matplotplusplus/CMakeFiles/INSTALL.dir
+C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/externals/matplotplusplus/CMakeFiles/ALL_BUILD.dir
+C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/externals/matplotplusplus/source/CMakeFiles/INSTALL.dir
+C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/externals/matplotplusplus/source/3rd_party/CMakeFiles/nodesoup.dir
+C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/externals/matplotplusplus/source/3rd_party/CMakeFiles/INSTALL.dir
+C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/externals/matplotplusplus/source/matplot/CMakeFiles/matplot.dir
+C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/externals/matplotplusplus/source/matplot/CMakeFiles/INSTALL.dir
