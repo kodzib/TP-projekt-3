@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3
+# Install script for directory: C:/Users/witfo/Desktop/Tp projekt 3/TP-projekt-3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,8 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/externals/pybind11/cmake_install.cmake")
-  include("C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/externals/matplotplusplus/cmake_install.cmake")
+  include("C:/Users/witfo/Desktop/Tp projekt 3/TP-projekt-3/vsstudio/externals/pybind11/cmake_install.cmake")
+  include("C:/Users/witfo/Desktop/Tp projekt 3/TP-projekt-3/vsstudio/externals/matplotplusplus/cmake_install.cmake")
 
 endif()
 
@@ -47,5 +47,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/vsstudio/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/witfo/Desktop/Tp projekt 3/TP-projekt-3/vsstudio/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

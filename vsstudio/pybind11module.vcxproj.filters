@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\kbrow\OneDrive\Desktop\projekty\TP projekt 3\TP-projekt-3\source\module\module.cpp">
+    <ClCompile Include="C:\Users\witfo\Desktop\Tp projekt 3\TP-projekt-3\source\module\module.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\kbrow\OneDrive\Desktop\projekty\TP projekt 3\TP-projekt-3\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\witfo\Desktop\Tp projekt 3\TP-projekt-3\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{2F7AB4CF-FF26-3AB7-AF57-FAAE5D3D9F76}</UniqueIdentifier>
+      <UniqueIdentifier>{00AF555C-3058-36BC-BBBD-525E2D3BAA19}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
