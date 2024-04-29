@@ -4,12 +4,14 @@
 #include <stdio.h>
 #include <matplot/matplot.h>
 #include <cmath>
+#include <string>
 
 
 namespace py = pybind11;
 
-void say_hello() {
+void say_hello(int x) {
 	printf("Hello World!\n");
+	std::cout << x << std::endl;
 }
 
 void plot_audio(py::array_t<float> dane_to_plot) {
@@ -20,9 +22,30 @@ void plot_audio(py::array_t<float> dane_to_plot) {
 	matplot::save("C:/Users/kbrow/OneDrive/Desktop/projekty/TP projekt 3/TP-projekt-3/test_graph.jpg");
 }
 
+py::array_t<double> signal_generator(char type, double stepping, const py::ssize_t size) {
+	std::vector<double> lista(size);
+	double sin_in = 0;
+	switch (type) {
+	case 's':
+		for (int i = 0; i < size; i++) {
+			lista[i] = sin(sin_in);
+			sin_in += stepping;
+		}
+		return py::array(size, lista.data());
+		break;
+	default:
+		for (int i = 0; i < size; i++) {
+			lista[i] = 0;
+		}
+		return py::array(size, lista.data());
+		break;
+	}
+}
+
 PYBIND11_MODULE(pybind11module, module) {
 	module.doc() = "Pybind11Module";
 
 	module.def("say_hello", &say_hello);
 	module.def("plot_audio", &plot_audio);
+	module.def("signal_generator", &signal_generator, "Generator sygnalow, jako typ przekazac pierwsza litere zachcianego typu");
 }
