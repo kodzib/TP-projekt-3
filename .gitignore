@@ -1,4 +1,5 @@
-externals/
+externals/matplotplusplus/*
+externals/pybind11/*
 vsstudio/
 !generate_vs2022.bat
 *.wav
