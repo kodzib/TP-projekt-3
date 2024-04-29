@@ -1,6 +1,10 @@
 externals/
 vsstudio/
 !generate_vs2022.bat
+*.wav
+*.flack
+*.mp4
+!test_audio_file_1.wav
 
 ## doslownie skopiowany .gitignore z innego projektu vs
 ## Ignore Visual Studio temporary files, build results, and

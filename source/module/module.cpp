@@ -24,12 +24,36 @@ void plot_audio(py::array_t<float> dane_to_plot) {
 
 py::array_t<double> signal_generator(char type, double stepping, const py::ssize_t size) {
 	std::vector<double> lista(size);
-	double sin_in = 0;
+	double signal_counter = 0;
+	double triangle_count = 0;
 	switch (type) {
-	case 's':
+	case 's': case 'S': //sin
 		for (int i = 0; i < size; i++) {
-			lista[i] = sin(sin_in);
-			sin_in += stepping;
+			lista[i] = sin(signal_counter);
+			signal_counter += stepping;
+		}
+		return py::array(size, lista.data());
+		break;
+	case 'c': case 'C': //cos
+		for (int i = 0; i < size; i++) {
+			lista[i] = cos(signal_counter);
+			signal_counter += stepping;
+		}
+		return py::array(size, lista.data());
+		break;
+	case 'p': case 'P': //prostokatny
+		for (int i = 0; i < size; i++) {
+			if (sin(signal_counter) >= 0) lista[i] = 1;
+			else lista[i] = -1;
+			signal_counter += stepping;
+		}
+		return py::array(size, lista.data());
+		break;
+	case 't': case 'T': //piloksztaltny
+		for (int i = 0; i < size; i++) {
+			lista[i] = triangle_count;
+			triangle_count += stepping;
+			if (triangle_count > 1) triangle_count = 0;
 		}
 		return py::array(size, lista.data());
 		break;
