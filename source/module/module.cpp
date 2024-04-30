@@ -17,7 +17,7 @@ void say_hello(int x) {
 void plot_audio(py::array_t<float> buf, std::string path_to_save) {
 	float* ptr = static_cast<float*>(buf.request().ptr);
 	size_t size = buf.size();
-	std::vector<double> dane_to_plot(ptr, ptr + size);
+	std::vector<float> dane_to_plot(ptr, ptr + size);
 	matplot::plot(dane_to_plot);
 	matplot::save(path_to_save);
 	matplot::show();
