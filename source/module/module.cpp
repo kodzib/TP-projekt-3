@@ -14,12 +14,13 @@ void say_hello(int x) {
 	std::cout << x << std::endl;
 }
 
-void plot_audio(py::array_t<float> dane_to_plot, std::string path_to_save) {
-	py::buffer_info array_buf = dane_to_plot.request();
-	float* ptr = static_cast<float*>(array_buf.ptr);
-	int size = array_buf.shape[0];
-	matplot::fplot([](double x) {return sin(x);}, std::array<double, 2>{-10, 10}, "x--b")->color("red").line_width(2);
+void plot_audio(py::array_t<float> buf, std::string path_to_save) {
+	float* ptr = static_cast<float*>(buf.request().ptr);
+	size_t size = buf.size();
+	std::vector<double> dane_to_plot(ptr, ptr + size);
+	matplot::plot(dane_to_plot);
 	matplot::save(path_to_save);
+	matplot::show();
 }
 
 py::array_t<double> signal_generator(char type, double stepping, const py::ssize_t size) {
