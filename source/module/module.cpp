@@ -20,7 +20,7 @@ void plot_audio(py::array_t<float> buf, std::string path_to_save) {
 	std::vector<float> dane_to_plot(ptr, ptr + size);
 	matplot::plot(dane_to_plot);
 	matplot::save(path_to_save);
-	matplot::show();
+	//matplot::show();
 }
 
 py::array_t<double> signal_generator(char type, double stepping, const py::ssize_t size) {
