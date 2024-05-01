@@ -74,15 +74,24 @@ py::array_t<double> signal_generator(const char type, const double freq, const i
 		break;
 	}
 }
-/*
-py::array_t<double> filtracja() {
 
+py::array_t<double> filtracja_d(py::array_t<double> buf, const char type, const int kernel_size) {
+	double* ptr = static_cast<double*>(buf.request().ptr);
+	size_t size = buf.size();
+	std::vector<double> dane(ptr, ptr + size);
+	std::vector<double> kernel(1 + 2*(kernel_size - 1));
+	for (int i = 0; i < kernel_size; i++) {
+		kernel[i] = (1 / sqrt(2 * M_PI * pow(kernel_size / 2., 2))) * exp(-1 * pow(i, 2) / (2 * pow(kernel_size / 2., 2)));
+		std::cout << kernel[i] << ' ' << i << std::endl;
+	}
+	return py::array(size, dane.data());
 }
-*/
+
 PYBIND11_MODULE(pybind11module, module) {
 	module.doc() = "Pybind11Module";
 
 	module.def("say_hello", &say_hello);
 	module.def("plot_audio", &plot_audio);
 	module.def("signal_generator", &signal_generator, "Generator sygnalow, jako typ przekazac pierwsza litere zachcianego typu");
+	module.def("filtracja_d", &filtracja_d);
 }
