@@ -127,8 +127,16 @@ py::array_t<double> filtracja_img(py::array_t<double> image, const int kernel_si
 		for (int j = 0; j < kernel_size; j++) {
 			double sigma = 1;
 			kernel[i][j] = (1 /(2 * M_PI * pow(sigma, 2))) * exp(-1 * (pow(i, 2) + pow(j, 2)) / (2 * pow(sigma, 2)));
+			sum += kernel[i][j];
 		}
 	}
+
+	for (int i = 0; i < 5; ++i) {
+		for (int j = 0; j < 5; ++j) {
+			kernel[i][j] /= sum;
+		}
+	}
+
 
 	for (int i = 0; i < kernel_size; ++i) {
 		for (int j = 0; j < kernel_size; ++j){
@@ -136,6 +144,22 @@ py::array_t<double> filtracja_img(py::array_t<double> image, const int kernel_si
 			std::cout << std::endl;
 		}
 	}
+
+
+	//kopia tablicy
+	auto buf = image.request();
+	int height = buf.shape[0];
+	int width = buf.shape[1];
+	int rgb = buf.shape[2];
+	std::vector<std::vector<std::vector<double>>> kopia(height, std::vector<std::vector<double>>(width, std::vector<double>(rgb)));
+	for (int i = 0; i < height; ++i) {
+		for (int j = 0; j < width; ++j) {
+			for (int k = 0; k < rgb; ++k) {
+				kopia[i][j][k] = image.at(i, j, k);
+			}
+		}
+	}
+
 
 
 	return py::array();
