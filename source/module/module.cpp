@@ -120,20 +120,59 @@ py::array_t<double> filtracja_d(py::array_t<double> buf, const char type, const 
 }
 
 //gauss dla 2d
-py::array_t<unsigned char> filtracja_img(py::array_t<unsigned char> image, const int sigma)
+py::array_t<UINT8> filtracja_img(py::array_t<UINT8> image, const int kernel_size, const char type)
 {
 	double sum = 0.;
-	const int kernel_size = 3 * sigma - sigma%2 + 1;
 	std::vector<std::vector<double>> kernel(kernel_size, std::vector<double> (kernel_size));
 
 	//ta czensc do wsadzenia w switch do innych typow filtrowania
-	for (int i = -kernel_size / 2; i <= kernel_size / 2; ++i) {
-		for (int j = -kernel_size / 2; j <= kernel_size / 2; ++j) {
-			kernel[i + kernel_size / 2][j + kernel_size / 2] = (1 / (2 * M_PI * pow(sigma, 2))) * exp(-1 * ((pow(i, 2) + pow(j, 2)) / (2 * pow(sigma, 2))));
-			sum += kernel[i + kernel_size / 2][j + kernel_size / 2];
+	switch (type) {
+	case 'g': case 'G':
+		//gauss
+		for (int i = -kernel_size / 2; i <= kernel_size / 2; ++i) {
+			for (int j = -kernel_size / 2; j <= kernel_size / 2; ++j) {
+				const int sigma = 1;
+				if (i + kernel_size / 2 < kernel_size && j + kernel_size / 2 < kernel_size) {
+					kernel[i + kernel_size / 2][j + kernel_size / 2] = (1 / (2 * M_PI * pow(sigma, 2))) * exp(-1 * ((pow(i, 2) + pow(j, 2)) / (2 * pow(sigma, 2))));
+					sum += kernel[i + kernel_size / 2][j + kernel_size / 2];
+				}
+			}
 		}
-	}
+		break;
 
+	case 'r': case 'R': case'b': case'B': case'z': case'Z':
+ 		//kasacja koloru dowolnego
+		for (int i = -kernel_size / 2; i <= kernel_size / 2; ++i) {
+			for (int j = -kernel_size / 2; j <= kernel_size / 2; ++j) {
+				if (i + kernel_size / 2 < kernel_size && j + kernel_size / 2 < kernel_size) {
+					kernel[i + kernel_size / 2][j + kernel_size / 2] = 0;
+					sum = 1;
+				}
+			}
+		}
+		break;
+	case 's': case 'S':
+		for (int i = -kernel_size / 2; i <= kernel_size / 2; ++i) {
+			for (int j = -kernel_size / 2; j <= kernel_size / 2; ++j) {
+				if (i + kernel_size / 2 < kernel_size && j + kernel_size / 2 < kernel_size) {
+					kernel[i + kernel_size / 2][j + kernel_size / 2] = 0;
+					sum = 1;
+				}
+			}
+		}
+		break;
+	default:
+		//jakis random filtr
+		for (int i = -kernel_size / 2; i <= kernel_size / 2; ++i) {
+			for (int j = -kernel_size / 2; j <= kernel_size / 2; ++j) {
+				if (i + kernel_size / 2 < kernel_size && j + kernel_size / 2 < kernel_size) {
+					kernel[i + kernel_size / 2][j + kernel_size / 2] = 0;
+					sum = 1;
+				}
+			}
+		}
+		break;
+	}
 
 	std::cout << sum << std::endl;
 	for (int i = 0; i < kernel_size; i++) {
@@ -145,32 +184,62 @@ py::array_t<unsigned char> filtracja_img(py::array_t<unsigned char> image, const
 	}
 
 	py::buffer_info buf = image.request();
-	unsigned char* ptr = (unsigned char*)buf.ptr;
+	UINT8* ptr = (UINT8*)buf.ptr;
 
 
 	unsigned int height = buf.shape[0];
 	unsigned int width = buf.shape[1];
 	unsigned int rgb = buf.shape[2];
 
-	py::array_t<unsigned char> filtered_image({ height, width, rgb });
+	py::array_t<UINT8> filtered_image({ height, width, rgb });
 	py::buffer_info filtered_buf = filtered_image.request();
-	unsigned char* filtered_ptr = (unsigned char*)filtered_buf.ptr;
+	UINT8* filtered_ptr = (UINT8*)filtered_buf.ptr;
 
 	for (int i = 0; i < height; ++i) {
 		for (int j = 0; j < width; ++j) {
 			for (int k = 0; k < rgb; ++k) {
-				unsigned char pixel = 0.0;
-				int center = kernel_size / 2;
-				for (int m = 0; m < kernel_size; ++m) {
-					for (int n = 0; n < kernel_size; ++n) {
-						int x = i + m - center;
-						int y = j + n - center;
-						if (x >= 0 && x < height && y >= 0 && y < width) {
-							pixel += kernel[m][n] * image.at(x, y, k);
+				UINT8 pixel = 0.0;
+				switch (type) {
+				case 'g': case 'G':
+					for (int m = 0; m < kernel_size; ++m) {
+						for (int n = 0; n < kernel_size; ++n) {
+							int x = i + m - kernel_size/2;
+							int y = j + n - kernel_size / 2;
+							if (x >= 0 && x < height && y >= 0 && y < width) {
+								pixel += kernel[m][n] * image.at(x, y, k);
+							}
 						}
 					}
+					filtered_ptr[i * width * rgb + j * rgb + k] = pixel; 
+					break;
+				case 'r': case 'R':
+					if (k != 0) {
+						pixel = kernel[0][0] * image.at(i, j, k);
+						filtered_ptr[i * width * rgb + j * rgb + k] = pixel;
+					}
+					else filtered_ptr[i * width * rgb + j * rgb + k] = image.at(i, j, k);
+				break;
+				case 'b': case 'B':
+					if (k != 2) {
+						pixel = kernel[0][0] * image.at(i, j, k);
+						filtered_ptr[i * width * rgb + j * rgb + k] = pixel;
+					}
+					else filtered_ptr[i * width * rgb + j * rgb + k] = image.at(i, j, k);
+					break;
+				case 'z': case 'Z':
+					if (k != 1) {
+						pixel = kernel[0][0] * image.at(i, j, k);
+						filtered_ptr[i * width * rgb + j * rgb + k] = pixel;
+					}
+					else filtered_ptr[i * width * rgb + j * rgb + k] = image.at(i, j, k);
+					break;
+				case 's': case 'S':
+					filtered_ptr[i * width * rgb + j * rgb + k] =(image.at(i, j, 0)+image.at(i, j, 1)+image.at(i, j, 2))/3;
+					break;
+				default:
+					//
+				break;
 				}
-				filtered_ptr[i * width *rgb + j * rgb + k] =pixel;
 			}
 		}
 	}
@@ -188,3 +257,4 @@ PYBIND11_MODULE(pybind11module, module) {
 	module.def("filtracja_d", &filtracja_d);
 	module.def("filtracja_img", &filtracja_img);
 }
+
