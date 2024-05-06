@@ -5,8 +5,10 @@ vsstudio/
 *.wav
 *.flack
 *.mp4
+*.jpg
 !test_audio_file_1.wav
 !test_audio_file_2.wav
+!obraz.jpg
 
 ## doslownie skopiowany .gitignore z innego projektu vs
 ## Ignore Visual Studio temporary files, build results, and

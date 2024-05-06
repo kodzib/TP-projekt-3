@@ -104,7 +104,7 @@ py::array_t<double> filtracja_d(py::array_t<double> buf, const char type, const 
 	}
 	for (int i = 0; i < kernel_size; i++) {
 		kernel[i] /= sum;
-		std::cout << kernel[i] << std::endl;
+		//std::cout << kernel[i] << std::endl;
 	}
 
 	for (int i = 0; i < size; i++) {
@@ -118,6 +118,7 @@ py::array_t<double> filtracja_d(py::array_t<double> buf, const char type, const 
 	}
 	return py::array(size, dane.data());
 }
+
 //gauss dla 2d
 py::array_t<unsigned char> filtracja_img(py::array_t<unsigned char> image, const int sigma)
 {
@@ -125,18 +126,22 @@ py::array_t<unsigned char> filtracja_img(py::array_t<unsigned char> image, const
 	const int kernel_size = 3 * sigma - sigma%2 + 1;
 	std::vector<std::vector<double>> kernel(kernel_size, std::vector<double> (kernel_size));
 
-
+	//ta czensc do wsadzenia w switch do innych typow filtrowania
 	for (int i = -kernel_size / 2; i <= kernel_size / 2; ++i) {
 		for (int j = -kernel_size / 2; j <= kernel_size / 2; ++j) {
 			kernel[i + kernel_size / 2][j + kernel_size / 2] = (1 / (2 * M_PI * pow(sigma, 2))) * exp(-1 * ((pow(i, 2) + pow(j, 2)) / (2 * pow(sigma, 2))));
 			sum += kernel[i + kernel_size / 2][j + kernel_size / 2];
 		}
 	}
-	std::cout << sum;
+
+
+	std::cout << sum << std::endl;
 	for (int i = 0; i < kernel_size; i++) {
 		for (int j = 0; j < kernel_size; j++) {
 			kernel[i][j] /= sum;
+			std::cout << kernel[i][j] << ' ';
 		}
+		std::cout << std::endl;
 	}
 
 	py::buffer_info buf = image.request();

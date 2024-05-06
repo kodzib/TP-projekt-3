@@ -20,4 +20,5 @@ sf.write(fixed_path + '/output_tri.wav', signal_generator('t', 100, audio_sample
 
 sf.write(fixed_path + '/output_gauss.wav', filtracja_d(audio_data, 'g', 4), audio_samplerate)
 sf.write(fixed_path + '/test.wav', audio_data, audio_samplerate)
+
 iio.imwrite(fixed_path + '/filtered_image.jpg', filtracja_img(image,2))
