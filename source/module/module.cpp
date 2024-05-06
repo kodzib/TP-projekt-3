@@ -125,10 +125,9 @@ py::array_t<UINT8> filtracja_img(py::array_t<UINT8> image, const int kernel_size
 	double sum = 0.;
 	std::vector<std::vector<double>> kernel(kernel_size, std::vector<double> (kernel_size));
 
-	//ta czensc do wsadzenia w switch do innych typow filtrowania
 	switch (type) {
 	case 'g': case 'G':
-		//gauss
+		//gauss przy duzych sigma zaciemnia obraz?
 		for (int i = -kernel_size / 2; i <= kernel_size / 2; ++i) {
 			for (int j = -kernel_size / 2; j <= kernel_size / 2; ++j) {
 				const int sigma = 1;
@@ -151,18 +150,8 @@ py::array_t<UINT8> filtracja_img(py::array_t<UINT8> image, const int kernel_size
 			}
 		}
 		break;
-	case 's': case 'S':
-		for (int i = -kernel_size / 2; i <= kernel_size / 2; ++i) {
-			for (int j = -kernel_size / 2; j <= kernel_size / 2; ++j) {
-				if (i + kernel_size / 2 < kernel_size && j + kernel_size / 2 < kernel_size) {
-					kernel[i + kernel_size / 2][j + kernel_size / 2] = 0;
-					sum = 1;
-				}
-			}
-		}
-		break;
 	default:
-		//jakis random filtr
+		//rgb--> balck and white
 		for (int i = -kernel_size / 2; i <= kernel_size / 2; ++i) {
 			for (int j = -kernel_size / 2; j <= kernel_size / 2; ++j) {
 				if (i + kernel_size / 2 < kernel_size && j + kernel_size / 2 < kernel_size) {
@@ -198,7 +187,7 @@ py::array_t<UINT8> filtracja_img(py::array_t<UINT8> image, const int kernel_size
 	for (int i = 0; i < height; ++i) {
 		for (int j = 0; j < width; ++j) {
 			for (int k = 0; k < rgb; ++k) {
-				UINT8 pixel = 0.0;
+				UINT8 pixel = 0;
 				switch (type) {
 				case 'g': case 'G':
 					for (int m = 0; m < kernel_size; ++m) {
@@ -233,12 +222,9 @@ py::array_t<UINT8> filtracja_img(py::array_t<UINT8> image, const int kernel_size
 					}
 					else filtered_ptr[i * width * rgb + j * rgb + k] = image.at(i, j, k);
 					break;
-				case 's': case 'S':
+				default:
 					filtered_ptr[i * width * rgb + j * rgb + k] =(image.at(i, j, 0)+image.at(i, j, 1)+image.at(i, j, 2))/3;
 					break;
-				default:
-					//
-				break;
 				}
 			}
 		}
