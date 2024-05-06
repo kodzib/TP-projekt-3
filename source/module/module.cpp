@@ -119,50 +119,58 @@ py::array_t<double> filtracja_d(py::array_t<double> buf, const char type, const 
 	return py::array(size, dane.data());
 }
 //gauss dla 2d
-py::array_t<double> filtracja_img(py::array_t<double> image, const int kernel_size)
+py::array_t<unsigned char> filtracja_img(py::array_t<unsigned char> image, const int sigma)
 {
 	double sum = 0.;
+	const int kernel_size = 3 * sigma - sigma%2 + 1;
 	std::vector<std::vector<double>> kernel(kernel_size, std::vector<double> (kernel_size));
-	for (int i = 0; i < kernel_size; i++) {
-		for (int j = 0; j < kernel_size; j++) {
-			double sigma = 1;
-			kernel[i][j] = (1 /(2 * M_PI * pow(sigma, 2))) * exp(-1 * (pow(i, 2) + pow(j, 2)) / (2 * pow(sigma, 2)));
-			sum += kernel[i][j];
+
+
+	for (int i = -kernel_size / 2; i <= kernel_size / 2; ++i) {
+		for (int j = -kernel_size / 2; j <= kernel_size / 2; ++j) {
+			kernel[i + kernel_size / 2][j + kernel_size / 2] = (1 / (2 * M_PI * pow(sigma, 2))) * exp(-1 * ((pow(i, 2) + pow(j, 2)) / (2 * pow(sigma, 2))));
+			sum += kernel[i + kernel_size / 2][j + kernel_size / 2];
 		}
 	}
-
-	for (int i = 0; i < 5; ++i) {
-		for (int j = 0; j < 5; ++j) {
+	std::cout << sum;
+	for (int i = 0; i < kernel_size; i++) {
+		for (int j = 0; j < kernel_size; j++) {
 			kernel[i][j] /= sum;
 		}
 	}
 
-
-	for (int i = 0; i < kernel_size; ++i) {
-		for (int j = 0; j < kernel_size; ++j){
-			std::cout << kernel[i][j]<<" ";
-			std::cout << std::endl;
-		}
-	}
+	py::buffer_info buf = image.request();
+	unsigned char* ptr = (unsigned char*)buf.ptr;
 
 
-	//kopia tablicy
-	auto buf = image.request();
-	int height = buf.shape[0];
-	int width = buf.shape[1];
-	int rgb = buf.shape[2];
-	std::vector<std::vector<std::vector<double>>> kopia(height, std::vector<std::vector<double>>(width, std::vector<double>(rgb)));
+	unsigned int height = buf.shape[0];
+	unsigned int width = buf.shape[1];
+	unsigned int rgb = buf.shape[2];
+
+	py::array_t<unsigned char> filtered_image({ height, width, rgb });
+	py::buffer_info filtered_buf = filtered_image.request();
+	unsigned char* filtered_ptr = (unsigned char*)filtered_buf.ptr;
+
 	for (int i = 0; i < height; ++i) {
 		for (int j = 0; j < width; ++j) {
 			for (int k = 0; k < rgb; ++k) {
-				kopia[i][j][k] = image.at(i, j, k);
+				unsigned char pixel = 0.0;
+				int center = kernel_size / 2;
+				for (int m = 0; m < kernel_size; ++m) {
+					for (int n = 0; n < kernel_size; ++n) {
+						int x = i + m - center;
+						int y = j + n - center;
+						if (x >= 0 && x < height && y >= 0 && y < width) {
+							pixel += kernel[m][n] * image.at(x, y, k);
+						}
+					}
+				}
+				filtered_ptr[i * width *rgb + j * rgb + k] =pixel;
 			}
 		}
 	}
 
-
-
-	return py::array();
+	return filtered_image;
 }
 
 
