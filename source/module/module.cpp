@@ -8,10 +8,17 @@
 #include <string>
 #include <numbers>
 
+/*
+Rzeczy do zapytania na konsultacjach:
+-jak ten buffor dziala i czy aktualne zrobienie jest poprawne
+-czemu audio jest spowolnione
+-co jeszcze mozna poprawic?
+
+*/
 
 namespace py = pybind11;
 
-void say_hello(int x) {
+void say_hello(int x) { //funkcja do testowania czy biblioteka dziala
 	printf("Hello World!\n");
 	std::cout << x << std::endl;
 }
@@ -75,7 +82,7 @@ py::array_t<double> signal_generator(const char type, const double freq, const i
 	}
 }
 
-py::array_t<double> filtracja_d(py::array_t<double> buf, const char type, const int kernel_size) {
+py::array_t<double> filtracja_d(py::array_t<double> buf, const char type, const int kernel_size) { //filtracja jedno wymiarowa
 	double* ptr = static_cast<double*>(buf.request().ptr);
 	size_t size = buf.size();
 	std::vector<double> dane(ptr, ptr + size);
@@ -119,8 +126,7 @@ py::array_t<double> filtracja_d(py::array_t<double> buf, const char type, const 
 	return py::array(size, dane.data());
 }
 
-//gauss dla 2d
-py::array_t<UINT8> filtracja_img(py::array_t<UINT8> image, const int kernel_size, const char type)
+py::array_t<UINT8> filtracja_img(py::array_t<UINT8> image, const int kernel_size, const char type) //filtracja 2D
 {
 	double sum = 0.;
 	std::vector<std::vector<double>> kernel(kernel_size, std::vector<double> (kernel_size));
@@ -163,13 +169,13 @@ py::array_t<UINT8> filtracja_img(py::array_t<UINT8> image, const int kernel_size
 		break;
 	}
 
-	std::cout << sum << std::endl;
+	//std::cout << sum << std::endl;
 	for (int i = 0; i < kernel_size; i++) {
 		for (int j = 0; j < kernel_size; j++) {
 			kernel[i][j] /= sum;
-			std::cout << kernel[i][j] << ' ';
+			//std::cout << kernel[i][j] << ' ';
 		}
-		std::cout << std::endl;
+		//std::cout << std::endl;
 	}
 
 	py::buffer_info buf = image.request();
