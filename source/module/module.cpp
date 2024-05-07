@@ -13,7 +13,6 @@ Rzeczy do zapytania na konsultacjach:
 -jak ten buffor dziala i czy aktualne zrobienie jest poprawne
 -czemu audio jest spowolnione
 -co jeszcze mozna poprawic?
-//czemu gauss przy duzych sigma zaciemnia obraz? przy malych tez ale lekko
 
 */
 
@@ -31,6 +30,7 @@ void plot_audio(py::array_t<float> buf, std::string path_to_save) {
 	matplot::plot(dane_to_plot);
 	matplot::save(path_to_save);
 	//matplot::show();
+	//tutaj chyba sie nie obejdzie bez kopiowania danych
 }
 
 py::array_t<double> signal_generator(const char type, const double freq, const int samplerate, const py::ssize_t size) {
@@ -123,6 +123,9 @@ py::array_t<double> filtracja_d(py::array_t<double> buf, const char type, const 
 			}
 		}
 		dane[i] = new_kernl_ammount;
+		//przefiltrowane dane beda brane przy filtracji, powinny byc based
+		//imo robisz py::array o tym samym rozmiarze co buf, i do niego wrzucasz dane, dane do filtracji bierzez za pomoca ptr.at(x,y,z), returnujesz wczesniej stworzona tablice
+		// pozwoli to nie robic wektora do ktorego byly kopiowane dane
 	}
 	return py::array(size, dane.data());
 }
@@ -137,7 +140,7 @@ py::array_t<UINT8> filtracja_img(py::array_t<UINT8> image, const int kernel_size
 		//filtr gauusa
 		for (int i = -kernel_size / 2; i <= kernel_size / 2; ++i) {
 			for (int j = -kernel_size / 2; j <= kernel_size / 2; ++j) {
-				const int sigma = 1;
+				const int sigma = 5;
 				if (i + kernel_size / 2 < kernel_size && j + kernel_size / 2 < kernel_size) {
 					kernel[i + kernel_size / 2][j + kernel_size / 2] = (1 / (2 * M_PI * pow(sigma, 2))) * exp(-1 * ((pow(i, 2) + pow(j, 2)) / (2 * pow(sigma, 2))));
 					sum += kernel[i + kernel_size / 2][j + kernel_size / 2];
@@ -174,9 +177,7 @@ py::array_t<UINT8> filtracja_img(py::array_t<UINT8> image, const int kernel_size
 	for (int i = 0; i < kernel_size; i++) {
 		for (int j = 0; j < kernel_size; j++) {
 			kernel[i][j] /= sum;
-			//std::cout << kernel[i][j] << ' ';
 		}
-		//std::cout << std::endl;
 	}
 
 	py::buffer_info buf = image.request();
@@ -196,7 +197,7 @@ py::array_t<UINT8> filtracja_img(py::array_t<UINT8> image, const int kernel_size
 		for (int i = 0; i < height; ++i) {
 			for (int j = 0; j < width; ++j) {
 				for (int k = 0; k < rgb; ++k) {
-					UINT8 pixel = 0;
+					float pixel = 0;
 					for (int m = 0; m < kernel_size; ++m) {
 						for (int n = 0; n < kernel_size; ++n) {
 							int x = i + m - kernel_size / 2;
@@ -206,7 +207,7 @@ py::array_t<UINT8> filtracja_img(py::array_t<UINT8> image, const int kernel_size
 							}
 						}
 					}
-					filtered_ptr[i * width * rgb + j * rgb + k] = pixel;
+					filtered_ptr[i * width * rgb + j * rgb + k] = (UINT8)pixel;
 				}
 			}
 		}
@@ -216,10 +217,10 @@ py::array_t<UINT8> filtracja_img(py::array_t<UINT8> image, const int kernel_size
 		for (int i = 0; i < height; ++i) {
 			for (int j = 0; j < width; ++j) {
 				for (int k = 0; k < rgb; ++k) {
-					UINT8 pixel = 0;
+					float pixel = 0;
 					if (k != 0) {
 						pixel = kernel[0][0] * image.at(i, j, k);
-						filtered_ptr[i * width * rgb + j * rgb + k] = pixel;
+						filtered_ptr[i * width * rgb + j * rgb + k] = (UINT8)pixel;
 					}
 					else filtered_ptr[i * width * rgb + j * rgb + k] = image.at(i, j, k);
 				}
@@ -230,10 +231,10 @@ py::array_t<UINT8> filtracja_img(py::array_t<UINT8> image, const int kernel_size
 		for (int i = 0; i < height; ++i) {
 			for (int j = 0; j < width; ++j) {
 				for (int k = 0; k < rgb; ++k) {
-					UINT8 pixel = 0;
+					float pixel = 0;
 					if (k != 2) {
 						pixel = kernel[0][0] * image.at(i, j, k);
-						filtered_ptr[i * width * rgb + j * rgb + k] = pixel;
+						filtered_ptr[i * width * rgb + j * rgb + k] = (UINT8)pixel;
 					}
 					else filtered_ptr[i * width * rgb + j * rgb + k] = image.at(i, j, k);
 				}
@@ -244,10 +245,10 @@ py::array_t<UINT8> filtracja_img(py::array_t<UINT8> image, const int kernel_size
 		for (int i = 0; i < height; ++i) {
 			for (int j = 0; j < width; ++j) {
 				for (int k = 0; k < rgb; ++k) {
-					UINT8 pixel = 0;
+					float pixel = 0;
 					if (k != 1) {
 						pixel = kernel[0][0] * image.at(i, j, k);
-						filtered_ptr[i * width * rgb + j * rgb + k] = pixel;
+						filtered_ptr[i * width * rgb + j * rgb + k] = (UINT8)pixel;
 					}
 					else filtered_ptr[i * width * rgb + j * rgb + k] = image.at(i, j, k);
 				}
