@@ -13,6 +13,7 @@ Rzeczy do zapytania na konsultacjach:
 -jak ten buffor dziala i czy aktualne zrobienie jest poprawne
 -czemu audio jest spowolnione
 -co jeszcze mozna poprawic?
+//czemu gauss przy duzych sigma zaciemnia obraz? przy malych tez ale lekko
 
 */
 
@@ -129,11 +130,11 @@ py::array_t<double> filtracja_d(py::array_t<double> buf, const char type, const 
 py::array_t<UINT8> filtracja_img(py::array_t<UINT8> image, const int kernel_size, const char type) //filtracja 2D
 {
 	double sum = 0.;
-	std::vector<std::vector<double>> kernel(kernel_size, std::vector<double> (kernel_size));
+	std::vector<std::vector<double>> kernel(kernel_size, std::vector<double>(kernel_size));
 
 	switch (type) {
 	case 'g': case 'G':
-		//gauss przy duzych sigma zaciemnia obraz?
+		//filtr gauusa
 		for (int i = -kernel_size / 2; i <= kernel_size / 2; ++i) {
 			for (int j = -kernel_size / 2; j <= kernel_size / 2; ++j) {
 				const int sigma = 1;
@@ -146,7 +147,7 @@ py::array_t<UINT8> filtracja_img(py::array_t<UINT8> image, const int kernel_size
 		break;
 
 	case 'r': case 'R': case'b': case'B': case'z': case'Z':
- 		//kasacja koloru dowolnego
+		//kasacja R/G (z) /B
 		for (int i = -kernel_size / 2; i <= kernel_size / 2; ++i) {
 			for (int j = -kernel_size / 2; j <= kernel_size / 2; ++j) {
 				if (i + kernel_size / 2 < kernel_size && j + kernel_size / 2 < kernel_size) {
@@ -157,7 +158,7 @@ py::array_t<UINT8> filtracja_img(py::array_t<UINT8> image, const int kernel_size
 		}
 		break;
 	default:
-		//rgb--> balck and white
+		//rgb--> black and white
 		for (int i = -kernel_size / 2; i <= kernel_size / 2; ++i) {
 			for (int j = -kernel_size / 2; j <= kernel_size / 2; ++j) {
 				if (i + kernel_size / 2 < kernel_size && j + kernel_size / 2 < kernel_size) {
@@ -190,52 +191,79 @@ py::array_t<UINT8> filtracja_img(py::array_t<UINT8> image, const int kernel_size
 	py::buffer_info filtered_buf = filtered_image.request();
 	UINT8* filtered_ptr = (UINT8*)filtered_buf.ptr;
 
-	for (int i = 0; i < height; ++i) {
-		for (int j = 0; j < width; ++j) {
-			for (int k = 0; k < rgb; ++k) {
-				UINT8 pixel = 0;
-				switch (type) {
-				case 'g': case 'G':
+	switch (type) {
+	case 'g': case 'G':
+		for (int i = 0; i < height; ++i) {
+			for (int j = 0; j < width; ++j) {
+				for (int k = 0; k < rgb; ++k) {
+					UINT8 pixel = 0;
 					for (int m = 0; m < kernel_size; ++m) {
 						for (int n = 0; n < kernel_size; ++n) {
-							int x = i + m - kernel_size/2;
+							int x = i + m - kernel_size / 2;
 							int y = j + n - kernel_size / 2;
 							if (x >= 0 && x < height && y >= 0 && y < width) {
 								pixel += kernel[m][n] * image.at(x, y, k);
 							}
 						}
 					}
-					filtered_ptr[i * width * rgb + j * rgb + k] = pixel; 
-					break;
-				case 'r': case 'R':
+					filtered_ptr[i * width * rgb + j * rgb + k] = pixel;
+				}
+			}
+		}
+		break;
+	case 'r': case 'R':
+
+		for (int i = 0; i < height; ++i) {
+			for (int j = 0; j < width; ++j) {
+				for (int k = 0; k < rgb; ++k) {
+					UINT8 pixel = 0;
 					if (k != 0) {
 						pixel = kernel[0][0] * image.at(i, j, k);
 						filtered_ptr[i * width * rgb + j * rgb + k] = pixel;
 					}
 					else filtered_ptr[i * width * rgb + j * rgb + k] = image.at(i, j, k);
-				break;
-				case 'b': case 'B':
+				}
+			}
+		}
+		break;
+	case 'b': case 'B':
+		for (int i = 0; i < height; ++i) {
+			for (int j = 0; j < width; ++j) {
+				for (int k = 0; k < rgb; ++k) {
+					UINT8 pixel = 0;
 					if (k != 2) {
 						pixel = kernel[0][0] * image.at(i, j, k);
 						filtered_ptr[i * width * rgb + j * rgb + k] = pixel;
 					}
 					else filtered_ptr[i * width * rgb + j * rgb + k] = image.at(i, j, k);
-					break;
-				case 'z': case 'Z':
+				}
+			}
+		}
+		break;
+	case 'z': case 'Z':
+		for (int i = 0; i < height; ++i) {
+			for (int j = 0; j < width; ++j) {
+				for (int k = 0; k < rgb; ++k) {
+					UINT8 pixel = 0;
 					if (k != 1) {
 						pixel = kernel[0][0] * image.at(i, j, k);
 						filtered_ptr[i * width * rgb + j * rgb + k] = pixel;
 					}
 					else filtered_ptr[i * width * rgb + j * rgb + k] = image.at(i, j, k);
-					break;
-				default:
-					filtered_ptr[i * width * rgb + j * rgb + k] =(image.at(i, j, 0)+image.at(i, j, 1)+image.at(i, j, 2))/3;
-					break;
 				}
 			}
 		}
+		break;
+	default:
+		for (int i = 0; i < height; ++i) {
+			for (int j = 0; j < width; ++j) {
+				for (int k = 0; k < rgb; ++k) {
+					filtered_ptr[i * width * rgb + j * rgb + k] = (image.at(i, j, 0) + image.at(i, j, 1) + image.at(i, j, 2)) / 3;
+				}
+			}
+		}
+		break;
 	}
-
 	return filtered_image;
 }
 
@@ -249,4 +277,3 @@ PYBIND11_MODULE(pybind11module, module) {
 	module.def("filtracja_d", &filtracja_d);
 	module.def("filtracja_img", &filtracja_img);
 }
-
