@@ -84,20 +84,31 @@ py::array_t<double> signal_generator(const char type, const double freq, const i
 }
 
 py::array_t<double> filtracja_d(py::array_t<double> buf, const char type, const int kernel_size) { //filtracja jedno wymiarowa
-	double* ptr = static_cast<double*>(buf.request().ptr);
-	size_t size = buf.size();
-	std::vector<double> dane(ptr, ptr + size);
+
+	py::buffer_info signal = buf.request();
+	double* ptr = static_cast<double*>(signal.ptr);
+	unsigned int size = signal.shape[0];
+	//std::cout << size << " ";
+
+	//nowa zwracana tablica
+	py::array_t<double> filtered_signal({size});
+	py::buffer_info filtered_buf = filtered_signal.request();
+	double* filtered_ptr = (double*)filtered_buf.ptr;
+
+	//size_t size = buf.size();
+	//std::vector<double> dane(ptr, ptr + size);
+
+
 	std::vector<double> kernel(kernel_size);
 	double sum = 0.;
 	switch (type) {
 	case 'g': case 'G':
-		for (int i = 0; i < kernel_size; i++) {
+		for (int i = -kernel_size / 2; i <= kernel_size / 2; ++i) {
 			double sigma = 1;
-			kernel[i] = (1 / sqrt(2 * M_PI * pow(sigma, 2))) * exp(-1 * pow(i, 2) / (2 * pow(sigma, 2)));
-			if (i == 0) {
-				sum += kernel[i];
+			if (i + kernel_size / 2 < kernel_size) {
+				kernel[i + kernel_size / 2] = (1 / sqrt(2 * M_PI * pow(sigma, 2))) * exp(-1 * pow(i, 2) / (2 * pow(sigma, 2)));
+				sum += kernel[i + kernel_size / 2];
 			}
-			else sum += 2 * kernel[i];
 		}
 		break;
 	default:
@@ -112,22 +123,24 @@ py::array_t<double> filtracja_d(py::array_t<double> buf, const char type, const 
 	}
 	for (int i = 0; i < kernel_size; i++) {
 		kernel[i] /= sum;
-		//std::cout << kernel[i] << std::endl;
+		std::cout << kernel[i] << std::endl;
 	}
 
 	for (int i = 0; i < size; i++) {
 		double new_kernl_ammount = 0.;
 		for (int k = -1 * (kernel_size - 1); k < kernel_size - 1; k++) {
 			if (i + k >= 0 && i + k < size) {
-				new_kernl_ammount += dane[i] * kernel[abs(k)];
+				//new_kernl_ammount += dane[i] * kernel[abs(k)];
+				new_kernl_ammount += buf.at(i) * kernel[abs(k)];
 			}
 		}
-		dane[i] = new_kernl_ammount;
+		filtered_ptr[i] = new_kernl_ammount;
 		//przefiltrowane dane beda brane przy filtracji, powinny byc based
-		//imo robisz py::array o tym samym rozmiarze co buf, i do niego wrzucasz dane, dane do filtracji bierzez za pomoca ptr.at(x,y,z), returnujesz wczesniej stworzona tablice
+		//imo robisz py::array o tym samym rozmiarze co buf, i do niego wrzucasz dane, dane do filtracji bierzez za pomoca buf.at(x,y,z), returnujesz wczesniej stworzona tablice
 		// pozwoli to nie robic wektora do ktorego byly kopiowane dane
 	}
-	return py::array(size, dane.data());
+	return filtered_signal; 
+	// return py::array(size, dane.data());
 }
 
 py::array_t<UINT8> filtracja_img(py::array_t<UINT8> image, const int kernel_size, const char type) //filtracja 2D
