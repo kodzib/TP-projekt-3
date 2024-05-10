@@ -8,14 +8,6 @@
 #include <string>
 #include <numbers>
 
-/*
-Rzeczy do zapytania na konsultacjach:
--jak ten buffor dziala i czy aktualne zrobienie jest poprawne
--czemu audio jest spowolnione
--co jeszcze mozna poprawic?
-
-*/
-
 namespace py = pybind11;
 
 void say_hello(int x) { //funkcja do testowania czy biblioteka dziala
@@ -123,7 +115,7 @@ py::array_t<double> filtracja_d(py::array_t<double> buf, const char type, const 
 	}
 	for (int i = 0; i < kernel_size; i++) {
 		kernel[i] /= sum;
-		std::cout << kernel[i] << std::endl;
+		//std::cout << kernel[i] << std::endl;
 	}
 
 	for (int i = 0; i < size; i++) {

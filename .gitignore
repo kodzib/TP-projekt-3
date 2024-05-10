@@ -6,6 +6,7 @@ vsstudio/
 *.flack
 *.mp4
 *.jpg
+*.png
 !test_audio_file_1.wav
 !test_audio_file_2.wav
 !obraz.jpg
