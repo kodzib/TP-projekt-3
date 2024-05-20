@@ -21,7 +21,7 @@ sf.write(fixed_path + '/output_square.wav', signal_generator('p', 100, audio_sam
 sf.write(fixed_path + '/output_tri.wav', signal_generator('t', 100, audio_samplerate, 100000), audio_samplerate)
 
 #gauss 1d
-sf.write(fixed_path + '/output_gauss.wav', filtracja_d(audio_data, 'g', 4), audio_samplerate)
+sf.write(fixed_path + '/output_gauss.wav', filtracja_d(audio_data, 'g', 5), audio_samplerate)
 
 #filtracja 1d
 sf.write(fixed_path + '/output_filtracja.wav', filtracja_d(audio_data, 'f', 4), audio_samplerate)

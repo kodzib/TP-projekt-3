@@ -87,24 +87,25 @@ py::array_t<double> filtracja_d(py::array_t<double> buf, const char type, const 
 	double sum = 0.;
 	switch (type) {
 	case 'g': case 'G':
-		for (int i = -kernel_size / 2; i <= kernel_size / 2; ++i) {
+		for (int i = 0; i < kernel_size; i++) {
 			double sigma = 1;
-			if (i + kernel_size / 2 < kernel_size) {
-				kernel[i + kernel_size / 2] = (1 / sqrt(2 * M_PI * pow(sigma, 2))) * exp(-1 * pow(i, 2) / (2 * pow(sigma, 2)));
-				sum += kernel[i + kernel_size / 2];
-			}
+			kernel[i] = (1 / sqrt(2 * M_PI * pow(sigma, 2))) * exp(-1 * pow(i, 2) / (2 * pow(sigma, 2)));
 		}
 		break;
 	default:
 		for (int i = 0; i < kernel_size; i++) {
 			kernel[i] = 1;
-			if (i == 0) {
-				sum += kernel[i];
-			}
-			else sum += 2 * kernel[i];
 		}
 		break;
 	}
+
+	for (int i = 0; i < kernel_size; i++) {
+		if (i == 0) {
+			sum += kernel[i];
+		}
+		else sum += 2 * kernel[i];
+	}
+
 	for (int i = 0; i < kernel_size; i++) {
 		kernel[i] /= sum;
 	}
@@ -113,7 +114,7 @@ py::array_t<double> filtracja_d(py::array_t<double> buf, const char type, const 
 		double new_kernl_ammount = 0.;
 		for (int k = -1 * (kernel_size - 1); k < kernel_size - 1; k++) {
 			if (i + k >= 0 && i + k < size) {
-				new_kernl_ammount += buf.at(i) * kernel[abs(k)];
+				new_kernl_ammount += buf.at(i + k) * kernel[abs(k)];
 			}
 		}
 		filtered_ptr[i] = new_kernl_ammount;
