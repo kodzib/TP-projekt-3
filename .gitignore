@@ -1,11 +1,13 @@
 externals/matplotplusplus/*
 externals/pybind11/*
 vsstudio/
+.ipynb_checkpoints
 !generate_vs2022.bat
 *.wav
 *.flack
 *.mp4
 *.jpg
+*.png
 !test_audio_file_1.wav
 !test_audio_file_2.wav
 !obraz.jpg
@@ -374,3 +376,4 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/vsstudio
