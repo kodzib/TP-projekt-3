@@ -1,4 +1,4 @@
-from vsstudio.Debug.pybind11module import * #nasza napisana biblioteka
+from vsstudio.Debug.Pybind11module import * #nasza napisana biblioteka
 import soundfile as sf # wsparcie do wgrywanie audio
 import numpy as np
 import imageio.v3 as iio

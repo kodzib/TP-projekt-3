@@ -274,7 +274,7 @@ py::array_t<UINT8> filtracja_img(py::array_t<UINT8> image, const int kernel_size
 }
 
 
-PYBIND11_MODULE(pybind11module, module) {
+PYBIND11_MODULE(Pybind11module, module) {
 	module.doc() = "Pybind11Module";
 
 	module.def("say_hello", &say_hello);

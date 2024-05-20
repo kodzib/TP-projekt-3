@@ -16,6 +16,8 @@
 
 -pip install numpy
 
+-pip install jupyterlab #do do robienia sprawozdania na oddanie
+
 **To-Do:**
 1. Wizualizacja sygnału z wykorzystaniem biblioteki matplotplusplus ✅
 2. Filtracja 1D i 2D ✅
